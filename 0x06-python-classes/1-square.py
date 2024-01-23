@@ -1,16 +1,25 @@
 #!/usr/bin/python3
-"""Square class definition"""
+
+"""Square Class.
+This module contains a class that defines a square.
+Usage Example:
+    Square = __import__('1-square').Square
+    my_square = Square(3)
+    print(type(my_square))
+    print(my_square.__dict__)
+"""
 
 
 class Square:
-    """Represents a square
-    Attributes:
-        __size (int): size of a side of the square
+    """Defines the blueprint of a square.
+    Attribute:
+        size: An integer indicating the size of the square object.
     """
+
     def __init__(self, size):
-        """Initializes a square
-        Args:
-            size (int): size of a side of the square
-        Returns: None
+        """An object constructor method.
+        Initiatilizes Square with size.
+        Arg:
+            size: A integer representing object size
         """
         self.__size = size
